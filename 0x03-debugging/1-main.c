@@ -14,7 +14,7 @@ int main(void)
 	/**
 	 * while (i < 10)
 	 * {
-	 * putchar(i);
+	 *      putchar(i);
 	 * }
 	 */
 	print("Infinite loop avoided! \\0/\n");
