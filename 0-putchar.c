@@ -1,23 +1,12 @@
-#include "MAIN.H"
+#include "main.h"
+#include <unistd.h>
+
 /**
- * main - print _putchar
- * is written by bwave
- * Return: 0
+ * _putchar - writes the character c to stdout
+ * @c: the character to print
+ *
+ * Return: On success 1
  */
-
-int main (void)
+int _putchar(char c)
 {
-	_putchar ('_');
-	_putchar ('p');
-	_putchar ('u');
-	_putchar ('t');
-	_putchar ('u');
-	_putchar ('c');
-	_putchar ('h');
-	_putchar ('a');
-	_putchar ('r');
-	('\n');
-	
-	return (0);
-
-}
+	return (write(1, &c, 1));
